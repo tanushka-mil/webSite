@@ -1,0 +1,31 @@
+{
+  "name": "MMFGroup",
+  "version": "1.0.0",
+  "description": "MMFGroup",
+  "main": "gulpfile.js",
+  "scripts": {
+    "build": "gulp lessFinal && gulp scriptFinal && gulp copied",
+    "buildDev": "gulp less && gulp script && gulp copied",
+    "watch": "npm run build && npm run buildDev && gulp development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://insurancerevenue.visualstudio.com/InsuranceRevenue%20Frontend/_git/MMFGroup"
+  },
+  "author": "MMFGroup",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.0",
+    "gulp-clean-css": "^3.9.0",
+    "gulp-less": "^3.3.2",
+    "gulp-uglify": "^3.0.0",
+    "gulp-watch": "^4.3.11"
+  },
+  "dependencies": {
+    "gulp-concat": "^2.6.1",
+    "gulp-sourcemaps": "^2.6.1"
+  }
+}

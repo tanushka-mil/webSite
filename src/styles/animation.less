@@ -1,0 +1,53 @@
+/* main titles showing*/
+@keyframes slideInUp {
+  from {
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/* main blocks showing */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* main blocks hiding */
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+/* loader animation */
+
+@keyframes mouseWheel {
+  0% {
+    transform: scaleY(0.4) translateY(0);
+  }
+
+  20% {
+    transform: scaleY(1) translateY(0);
+  }
+
+  60% {
+    transform: scaleY(0.4) translateY(12px);
+  }
+
+  100% {
+    transform: scaleY(0.4) translateY(0);
+  }
+}
